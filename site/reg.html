@@ -1,0 +1,46 @@
+<div class="form-wrap">
+  <div class="profile">
+    <h1>Форма регистрация</h1>
+  </div>
+<?php 
+  if(isset($_Post[“submitButton”]))
+  echo “Success!”;
+?>
+
+  <form method="post" >
+    <div>
+      <label for="name">Имя</label>
+      <input type="text" name="name" required>
+    </div>
+    <div>
+      <label for="sename">Фамилия</label>
+      <input type="text" name="sename" required>
+    </div>
+    <div>
+      <label for="name_user">Имя пользователя</label>
+      <input type="text" name="login" required>
+    </div>
+
+	<div>
+      <label for="password">Пароль</label>
+      <input type="password" name="password" required>
+    </div>
+    <div>
+      <label for="password">Повторите пароль</label>
+      <input type="password" name="password" required>
+    </div>
+    <div>
+
+    <div>
+      <label for="email">E-mail</label>
+      <input type="email" name="email" required>
+    </div>
+    <div>
+      <label for="email">Повторите E-mail</label>
+      <input type="email" name="email" required>
+    </div>
+ 
+ <p>Already have an account? Sign in <a href="index.html">here</a>.</p>
+ <input type="submit" name="submitButton" value="SUBMIT">
+  </form> 
+</div>
